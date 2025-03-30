@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: #00FF66;
+}
+body {
+    background-color: #000000;
+}
+a{
+    font-size: 110%;
+    text-align:left;
+    color: #00FF66;
+}
+p{
+    font-size: 110%;
+    text-align: center;
+    color: #00FF66;
+}
+h2{
+    text-align: left;
+    color: #00FF66;
+}h3{
+    text-align: left;
+    color: #00FF66;
+}
+img {
+    display: block;
+    margin: auto;
+}
+.botonpip{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.botonpip:hover{
+ background-color: #012c12;
+}
