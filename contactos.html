@@ -13,7 +13,7 @@
     <h2>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</h2>
     <a href="https://www.instagram.com/jamal_rbj/#" class="botonpip">° Mi instagram (мой инстаграм)</a>
     <h2>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</h2>
-    <form action="#" method="post">
+    <form action="Jamalbazan@gmail.com" method="post">
         <label for="nombre">Tu nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre aquí">
         <label for="apellido">Tu apellido:</label>
@@ -21,7 +21,30 @@
         <label for="gmail">Tu gmail:</label>
         <input type="text" id="gmail" name="gmail" placeholder="Escribí tu gmail aqui">
         <button type="submit" class="botonpip">Enviar</button>
-      </form>  
+      </form> 
+      <div id="resultado"></div> 
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formulario = document.querySelector("form");
+      const resultado = document.getElementById("resultado");
+  
+      formulario.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const nombre = document.getElementById("nombre").value;
+        const apellido = document.getElementById("apellido").value;
+        const gmail = document.getElementById("gmail").value;
+  
+        resultado.innerHTML = `
+          <h3 style="color:#00FF66;">Gracias, ${nombre} ${apellido}</h3>
+          <p style="color:#00FF66;">Te contactaremos al correo: <strong>${gmail}</strong></p>
+        `;
+      });
+    });
+  </script>
+  </body>
+  </html>
+  
 </body>
 </html>
